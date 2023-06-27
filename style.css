@@ -80,12 +80,25 @@ main::before{
     top: 100px;
     text-align: center;
 }
-.main__img h1{
+.main__img div{
     background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main__img i{
+    width: 100px;
+    color:var(--light);
+    font-size:4em;
+}
+
+.main__img h1{
     color: var(--text);
     text-shadow: var(--accent) 2px 2px 2px;
     padding: 30px;
 }
+
 /* main form */
 .main__formContainer{
     width: 800px;
@@ -96,9 +109,16 @@ main::before{
     gap: 20px;
     z-index: 2;
 }
-.formContainer__heading {
+.form__intro {
+    padding: 40px 150px 0 20px;
+}
+.form__intro h2{
     font-size: .9em;
-    padding: 40px 20px;
+    font-weight: bolder;
+}
+
+.form__intro p{
+    font-style: italic;
 }
 form{
     display: flex;
@@ -107,18 +127,26 @@ form{
     flex-direction: column;
     background-color: var(--formBG);
     box-shadow: 1px 1px var(--accent);
-    padding: 20px;
+    padding: 12px 150px 20px 0;
+}
+form h3{
+    margin-left: 20px;
+    padding: 2px 0;
+    margin-bottom: 11px;
 }
 form div{
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    margin: 0px 40px;
+    justify-content: space-between;
+    margin: 0px 10px;
 
 }
 form div div{
     display: flex;
     flex-direction: column;
+    width: 170px;
+    height: 40px;
+    margin: 0 0 7px 10px;
 }
 
 
