@@ -4,149 +4,135 @@
     box-sizing: border-box;
     font-family: 'Radio Canada', sans-serif;
     line-height: 1.8;
-    overflow: hidden;
-
-
 }
-
-:root{
-    --text: #75a172;
-    --light: #88ac80;
-    --formBG: #b8e3ae;
-    --dark: #1d201d;
-    --accent:#241706;
-}
-
 main{
-    background:url(./images/forest.jpeg) center/cover;
     display: flex;
     flex-direction: row;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
-main::before{
-    content:"";
-    position: absolute;
-    top: 0;
-    left:0;
-    height: 100%;
-    width:100%;
-    background:url(./images/forest.jpeg) center/cover;
-    opacity: .5;
-    mix-blend-mode: hard-light;
-    animation: glow linear infinite 20s;
-
-}
-@keyframes glow {
-    0%{
-        background-position:  0 0;
-        filter: hue-rotate(0deg);
-    }
-    10%{
-        background-position: 5px 0;
-    }
-    20%{
-        background-position: 10px 0;
-    }
-    30%{
-        background-position: 15px 0;
-    }
-    40%{
-        background-position: 10px 0;
-    }
-    50%{
-        background-position: 5px 0;
-    }
-    60%{
-        background-position: 0 0;
-    }
-    70%{
-        background-position: -5px 0;
-    }
-    80%{
-        background-position: -10px 0;
-    }
-
-    100%{
-        background-position: 0 0;
-        filter: hue-rotate(360deg);
-    }
-}
-.main__img {
-    width: 500px;
-    height: 100%;
-    position: relative;
-    top: 100px;
-    text-align: center;
-}
-.main__img div{
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+/* left side */
+.left__container{
+    width: 34vw;
+    height: 100vh;
+    position: relative;
+    /* background: url(./images/forest.jpeg) center/cover; */
 
 }
-.main__img i{
-    width: 100px;
-    color:var(--light);
-    font-size:4em;
+
+.left__container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 25%;
+    background-color: rgb( 0 0 0 /.2);
+    padding: 20px;
+    width: 34vw;
 }
 
-.main__img h1{
-    color: var(--text);
-    text-shadow: var(--accent) 2px 2px 2px;
-    padding: 30px;
+.left__container h1{
+    top:25%;
+
+}
+/* controls logo on the left side */
+.left__container i{
+    font-size: 2em;
 }
 
-/* main form */
-.main__formContainer{
-    width: 800px;
-    height: 100%;
-    background-color: var(--light);
+
+
+
+/*-- MAIN FORM CONTROL AREA --  */
+
+/* right side */
+.right__container{
+width: 66vw;
+display: flex;
+flex-direction: column;
+height: 100vh;
+justify-content: space-around;
+}
+/* texts above form */
+.right__heading{
+    font-weight: 800;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    z-index: 2;
-}
-.form__intro {
-    padding: 40px 150px 0 20px;
-}
-.form__intro h2{
+    gap: 10px;
+    padding: 80px 50px 20px 50px;
     font-size: .9em;
+}
+
+/* we are sorry above form */
+.right__heading p{
+    font-style: italic;
+    font-size: 1.3em;
     font-weight: bolder;
 }
 
-.form__intro p{
-    font-style: italic;
+/* box shadow on form */
+.form__section{
+    box-shadow: -2px 5px 13px 0px rgb(0 0 0 / 20%);
+    padding: 70px 40px;
+    width: 100%;
+    position: relative;
 }
-form{
-    display: flex;
-    height: auto;
-    font-size: .6em;
-    flex-direction: column;
-    background-color: var(--formBG);
-    box-shadow: 1px 1px var(--accent);
-    padding: 12px 150px 20px 0;
+/* lets start portion on top of form */
+.form__heading{
+    font-size: 1.2em;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
 }
-form h3{
-    margin-left: 20px;
-    padding: 2px 0;
-    margin-bottom: 11px;
-}
+
+/*  make sure pairings are on the same horizontal axis */
 form div{
     display: flex;
+    justify-content: left;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 10px;
-
+    width: 800px;
+    
 }
-form div div{
+
+.form__group input{
+    width: 250px;
+    height: 27px;
+    appearance: none;
+    border: solid rgba(133, 131, 131, 0.2) 2px;
+    border-radius: 3px;
+}
+
+
+/* makes the label show on top of the input sections of the form and places it to the left */
+
+.form__subGroup{
     display: flex;
     flex-direction: column;
-    width: 170px;
-    height: 40px;
-    margin: 0 0 7px 10px;
+    justify-content: center;
+    align-items: flex-start;
+    
 }
 
+.form__submitBtn{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 50px;
+    gap: 20px;
+    bottom: 40px;
+    position: relative;
+}
+/* prevents submit from taking full width */
+.submit{
+    height: 30px;
+    width: 200px;
+    appearance: none;
+    border-radius: 5px;
+    border:none;
+}
 
+.form__submitBtn a{
+    text-decoration: none;
+}
