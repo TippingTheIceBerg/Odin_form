@@ -9,59 +9,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a540afb5d1.js" crossorigin="anonymous"></script>
-
-    
+    <title>We are Sorry</title>
 </head>
 <body>
     <main>
-        <section class="main__img">
-            <div>
-                <i class="fa-solid fa-radiation"></i>
-                <h1> Waste Isolation Pilot Plant</h1>
-            </div>
-        </section>
-        <section class="main__formContainer">
-            <div class="form__intro">
-                <h2>This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here. What is here was dangerous and repulsive to us. This message is a warning about danger.</h1>
-                <p>We are sorry.</p>
-            </div>
-            <form action="">
+    <div class="left__container">
+        <div>
+            <i class="fa-solid fa-radiation"></i>
+            <h1> Waste Isolation Pilot Plant</h1>
+        </div>
+    </div>
+
+    <div class="right__container">
+        <div class="right__heading">
+            <h2>This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here. What is here was dangerous and repulsive to us. This message is a warning about danger.</h1>
+            <p>We are sorry.</p>
+        </div>
+        <section class="form__section">
+            <div class="form__heading">
                 <h3>Let's Start</h3>
-                <div>
-                    <div>
-                        <label for="Fname">FIRST NAME</label>
-                        <input type="text" id="Fname">
+            </div>
+            <div class="form__form">
+                <form action="" id="entry">
+                    <div class="form__names form__group">
+                        <div class="form__subGroup">
+                            <label for="Fname">FIRST NAME</label>
+                            <input type="text" id="Fname">
+                        </div>
+                        <div class="form__subGroup">
+                            <label for="Lname">LAST NAME</label>
+                            <input type="text" id="Lname">
+                        </div>
                     </div>
-                    <div>
-                        <label for="Lname">LAST NAME</label>
-                        <input type="text" id="Lname">
+                    <div class="form__emailAndTel form__group">
+                        <div class="form__subGroup">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form__subGroup">
+                            <label for="tel">TELEPHONE</label>
+                            <input type="tel" name="tel" id="tel">
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                    <div class="form__passwords form__group">
+                        <div class="form__subGroup">
+                            <label for="enterPass">PASSWORD</label>
+                            <input type="password" name="enterPass" id="enterPass">
+                        </div>
+                        <div class="form__subGroup">
+                            <label for="confirmPass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmPass" id="confirmPass">
+                        </div>
                     </div>
-                    <div>
-                        <label for="tel">TELEPHONE</label>
-                        <input type="tel" name="tel" id="tel">
-                    </div>
-
-                </div>
-                <div>
-                    <div>
-                        <label for="enterPass">PASSWORD</label>
-                        <input type="password" name="enterPass" id="enterPass">
-                    </div>
-                    <div>
-                        <label for="confirmPass">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPass" id="confirmPass">
-                    </div>
-                </div>
-
-            </form>
+                </form>
+            </div>
         </section>
-    </main>
-    
+        <div class="form__submitBtn">
+            <input form="entry" class="submit" type="submit" value="Submit">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</main>
+
 </body>
 </html>
