@@ -12,3 +12,7 @@ Here is the organization and pre-code set up
 4. The form side has 2 sections, a top heading and the form area
 
 5. The form has 2 sections, the form entry and a submit button
+
+Style Section 
+
+1. Radiation waste and warning colors: green, yellow, black. Yellow call to attention like in the warning signs, green is the color of radiation, black is the color of the words describing the warning. Accent
