@@ -8,6 +8,7 @@
 
 :root{
 --backGroundColor : #3a4c37;
+--white: #eef4ee;
 
 }
 main{
@@ -21,7 +22,9 @@ main{
     width: 34vw;
     height: 100vh;
     position: relative;
-    background: url(./images/forest.jpeg) center/cover;
+    background: url(./images/dead2.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 /* controls the logo background color and position */
@@ -32,7 +35,7 @@ main{
     gap: 20px;
     position: absolute;
     top: 15%;
-    background-color: rgb( 0 0 0 /.2);
+    background-color: rgb( 0 0 0 /.5);
     height: 135px ;
     width: 34vw;
 
@@ -120,6 +123,7 @@ form div{
     appearance: none;
     border: solid rgba(133, 131, 131, 0.2) 2px;
     border-radius: 3px;
+    font-size: 1.2em;
 }
 
 
@@ -145,25 +149,40 @@ form div{
 }
 /* prevents submit from taking full width */
 .submit{
-    height: 40px;
-    width: 200px;
+    height: 50px;
+    width: 300px;
     appearance: none;
     border-radius: 5px;
-    border:none;
+    border:solid black;
     background-color: var(--backGroundColor);
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: white;
     cursor: pointer;
+    transition: linear .2s all;
+}
 
-    
+.submit:hover{
+    color: var(--backGroundColor);
+    background-color: var(--white);
+    border: solid var(--backGroundColor);
 }
 
 .form__submitBtn p{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
+    font-size: 1.2em;
 }
+
+
 .form__submitBtn a{
     text-decoration: none;
-    color: var(--backGroundColor);
+    color: #2d2e2d;
     font-weight: 800;
+    font-size: 1.2em;
+    transition: linear .1s;
+}
+
+.form__submitBtn a:hover{
+    color: green;
+    text-decoration: underline;
 }
