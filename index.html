@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
@@ -34,34 +33,40 @@
             </div>
             <div class="form__form">
                 <form action="" id="entry">
+                    <!-- first name last name -->
                     <div class="form__names form__group">
                         <div class="form__subGroup">
                             <label for="Fname">FIRST NAME</label>
-                            <input type="text" id="Fname">
+                            <input required type="text" id="Fname">
                         </div>
+
                         <div class="form__subGroup">
                             <label for="Lname">LAST NAME</label>
-                            <input type="text" id="Lname">
+                            <input required type="text" id="Lname">
                         </div>
                     </div>
+
+                    <!-- email and phone number -->
                     <div class="form__emailAndTel form__group">
                         <div class="form__subGroup">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input  type="email" name="email" id="email">
                         </div>
                         <div class="form__subGroup">
                             <label for="tel">TELEPHONE</label>
                             <input type="tel" name="tel" id="tel">
                         </div>
                     </div>
+
+                    <!-- password and confirm pass -->
                     <div class="form__passwords form__group">
                         <div class="form__subGroup">
                             <label for="enterPass">PASSWORD</label>
-                            <input type="password" name="enterPass" id="enterPass">
+                            <input type="password" autocomplete="new-password" name="enterPass" id="enterPass">
                         </div>
                         <div class="form__subGroup">
                             <label for="confirmPass">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmPass" id="confirmPass">
+                            <input type="password" autocomplete="new-password" name="confirmPass" id="confirmPass">
                         </div>
                     </div>
                 </form>
@@ -75,4 +80,6 @@
 </main>
 
 </body>
+<script src="./script.js"></script>
+
 </html>
