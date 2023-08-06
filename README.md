@@ -15,4 +15,8 @@ Here is the organization and pre-code set up
 
 Style Section 
 
-1. Radiation waste and warning colors: green, yellow, black. Yellow call to attention like in the warning signs, green is the color of radiation, black is the color of the words describing the warning. Accent
+1. Change in background image, original image did not match the theme
+
+JS
+
+1. Be able to take the value of password and compare it to confirm password. Once we hit submit, the variables of both should be assigned, if they do not match, the border should change in color. For user experience, maybe it would be better to see if it matches while typing them, so the create password will always start red as soon as they start typing in the area.
